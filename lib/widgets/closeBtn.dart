@@ -11,9 +11,28 @@ class CloseBtn extends StatelessWidget {
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
             color: AppTheme.gray1, borderRadius: BorderRadius.circular(30)),
-        child: Icon(
-          Icons.close,
-          size: 35,
+        child: IconButton(
+          icon: Icon(
+            Icons.close,
+            //size: 35,
+          ),
+          onPressed: () {
+            showDialog(
+                context: context,
+                builder: (context) {
+                  return AlertDialog(
+                    content: Text("Testing  Alert For Web"),
+                    title: Text("Testing"),
+                    actions: [
+                      TextButton(
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                          child: Text("OK"))
+                    ],
+                  );
+                });
+          },
           color: AppTheme.primaryForegroundColor,
         ),
       ),

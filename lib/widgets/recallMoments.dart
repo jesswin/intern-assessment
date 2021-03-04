@@ -24,9 +24,11 @@ class RecallMoments extends StatelessWidget {
                   color: AppTheme.transparent,
                   borderRadius: BorderRadius.circular(15),
                 )),
-            Text(
-              moments[index].title,
-              style: TextStyle(fontSize: 25, color: AppTheme.white),
+            Flexible(
+              child: Text(
+                moments[index].title,
+                style: TextStyle(fontSize: 25, color: AppTheme.white),
+              ),
             )
           ]);
         },

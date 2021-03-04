@@ -28,13 +28,15 @@ class TopicsForYou extends StatelessWidget {
                     topics[index].title,
                     style: TextStyle(color: AppTheme.white, fontSize: 25),
                   ),
-                  Container(
-                    width: 250,
-                    child: Text(
-                      topics[index].subTitle,
-                      overflow: TextOverflow.ellipsis,
-                      style:
-                          TextStyle(color: AppTheme.almostWhite, fontSize: 22),
+                  Flexible(
+                    child: Container(
+                      width: 250,
+                      child: Text(
+                        topics[index].subTitle,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                            color: AppTheme.almostWhite, fontSize: 22),
+                      ),
                     ),
                   ),
 
