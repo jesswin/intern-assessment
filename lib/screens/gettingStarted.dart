@@ -27,13 +27,14 @@ class GettingStarted extends StatelessWidget {
               child: Column(
                 children: [
                   CloseBtn(),
-                  Text(
+                  SelectableText(
                     "Help you Think!",
                     style: TextStyle(
                         color: AppTheme.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 40),
-                  ), //main title text
+                  ),
+                  //main title text
 
                   SubHeadingText(
                       "Everything we do includes Thinking."), //text below title
